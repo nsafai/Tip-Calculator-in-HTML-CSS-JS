@@ -18,8 +18,11 @@ calculateButton.onclick = function() {
     const tipPerPersonValue = Number(tipPerPerson.value);
     const totalPerPersonValue = Number(totalPerPerson.value);
 
-    tipTotal.innerHTML = subtotalValue + subtotalValue * (tipPercentValue/100);
-    console.log(tipTotal)
+    tipTotal.innerHTML = "$" + (subtotalValue * (tipPercentValue/100)).toFixed(2);
+    totalTotal.innerHTML = "$" + (subtotalValue + subtotalValue * (tipPercentValue/100)).toFixed(2);
 
-    console.log(typeof subtotalValue);
+    tipPerPerson.innerHTML = "$" + ((subtotalValue * (tipPercentValue/100)) / numPeopleValue).toFixed(2);
+    totalPerPerson.innerHTML = "$" + ((subtotalValue + subtotalValue * (tipPercentValue/100)) / numPeopleValue).toFixed(2);
+    // console.log(tipTotal)
+    // console.log(typeof subtotalValue);
 }
