@@ -1,0 +1,84 @@
+body {
+    font-family: Helvetica;
+    font-size: 20px;
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    /* setting up flex */
+    flex-direction: column;
+    /* defining main axis */
+    justify-content: center;
+    /* main axis */
+    align-items: center;
+    /* cross axis */
+    /* flex-wrap: flex; /* fit as many as possible on main axis */
+    */
+}
+
+.form-box {
+    margin-top:6.66%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 1px;
+    padding: 20px;
+    width: 300px;
+    background-color: #dddddd;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+}
+
+label,
+input {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+label {
+    text-align: left;
+    font-size: 0.66em;
+}
+
+button,
+input {
+    padding: 6px;
+    font-size: 1em;
+
+}
+
+#calculate {
+    width: 100%;
+    background-color: #4CAF50;
+    color:white;
+}
+
+#calculate:hover {
+    background-color: #ffffff;
+    color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+#tip,
+#total {
+    font-weight: bold;
+}
+
+.results {
+    display: block;
+}
+
+.results p {
+    display: flex;
+    /* flex-direction:row; */
+    justify-content: space-between;
+}
