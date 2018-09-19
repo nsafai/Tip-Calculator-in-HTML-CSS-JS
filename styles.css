@@ -4,6 +4,19 @@ body {
     background-color: #000;
 }
 
+h1 {
+    color:white;
+    margin-top:3.33%;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+}
+
+h2 {
+    margin-top:1em;
+    margin-bottom: 0.2em;
+    /* font-size: 1.3em; */
+}
+
 .container {
     display: flex;
     /* setting up flex */
@@ -14,11 +27,10 @@ body {
     align-items: center;
     /* cross axis */
     /* flex-wrap: flex; /* fit as many as possible on main axis */
-    */
 }
 
 .form-box {
-    margin-top:6.66%;
+    /* margin-top:1.67%; */
     border-style: solid;
     border-color: black;
     border-radius: 1px;
@@ -68,8 +80,8 @@ input {
     border-color: #4CAF50;
 }
 
-#tip,
-#total {
+.tip,
+.total {
     font-weight: bold;
 }
 
@@ -81,4 +93,8 @@ input {
     display: flex;
     /* flex-direction:row; */
     justify-content: space-between;
+}
+
+.pp {
+    /* background-color: #; */
 }
